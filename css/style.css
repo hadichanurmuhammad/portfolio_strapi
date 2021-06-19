@@ -275,7 +275,6 @@ input:focus, textarea:focus, select:focus, button:focus {
 	font-weight:bold;
 	background: url(http://placehold.it/650X800) no-repeat;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
     background-size: cover;
 }
 .prt_logo_wrapper img{

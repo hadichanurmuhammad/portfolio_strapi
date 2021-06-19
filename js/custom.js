@@ -333,7 +333,6 @@ Assigned to: ThemeForest
 	const newImageElement = document.createElement('img')
 	newImageElement.src = response.about_me_img_url
 	aboutMePhotoElement.appendChild(newImageElement)
-	console.log(response.about_me_img_url);
 })()
 
 ;(async () => {
@@ -345,7 +344,7 @@ Assigned to: ThemeForest
 	})
 	response = await response.json()
 	const newImageElement = document.createElement('img')
-	newImageElement.src = response.Portfolio_first_img_url
+	newImageElement.src = response.portfolio_first_img_url
 	aboutMePhotoElement.appendChild(newImageElement)
 })()
 
@@ -358,7 +357,7 @@ Assigned to: ThemeForest
 	})
 	response = await response.json()
 	const newImageElement = document.createElement('img')
-	newImageElement.src = response.Portfolio_second_img_url
+	newImageElement.src = response.portfolio_second_img_url
 	aboutMePhotoElement.appendChild(newImageElement)
 })()
 
@@ -371,7 +370,7 @@ Assigned to: ThemeForest
 	})
 	response = await response.json()
 	const newImageElement = document.createElement('img')
-	newImageElement.src = response.Portfolio_third_img_url
+	newImageElement.src = response.portfolio_third_img_url
 	aboutMePhotoElement.appendChild(newImageElement)
 })()
 
@@ -384,7 +383,7 @@ Assigned to: ThemeForest
 	})
 	response = await response.json()
 	const newImageElement = document.createElement('img')
-	newImageElement.src = response.Portfolio_fourth_img_url
+	newImageElement.src = response.portfolio_fourth_img_url
 	aboutMePhotoElement.appendChild(newImageElement)
 })()
 
@@ -397,7 +396,7 @@ Assigned to: ThemeForest
 	})
 	response = await response.json()
 	const newImageElement = document.createElement('img')
-	newImageElement.src = response.Portfolio_fifth_img_url
+	newImageElement.src = response.portfolio_fifth_img_url
 	aboutMePhotoElement.appendChild(newImageElement)
 })()
 
@@ -410,6 +409,6 @@ Assigned to: ThemeForest
 	})
 	response = await response.json()
 	const newImageElement = document.createElement('img')
-	newImageElement.src = response.Portfolio_sixth_img_url
+	newImageElement.src = response.portfolio_sixth_img_url
 	aboutMePhotoElement.appendChild(newImageElement)
 })()

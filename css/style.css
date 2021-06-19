@@ -1076,7 +1076,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_couter_wrapper{
     display: inline-block;
     width: 100%;
-	background-image:url(http://placehold.it/1920X600);
+	background-image:url(https://picsum.photos/1920/600);
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;

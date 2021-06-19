@@ -293,6 +293,7 @@ Assigned to: ThemeForest
 	for (let i of response) {
 		const h1Element = document.createElement('h1')
 		h1Element.textContent = i.text
+		h1Element.classList.add('center')
 		wrapper.appendChild(h1Element)
 	}
 	await $('.typed').each(function(){
@@ -317,4 +318,98 @@ Assigned to: ThemeForest
 	})
 	response = await response.json()
 	aboutMeElement.textContent = await response.about_me
+})()
+
+//prt_about_img
+
+;(async () => {
+	const aboutMePhotoElement = document.querySelector('.prt_about_img')
+	let response = await fetch('https://strapi-portfolio-hadicha.herokuapp.com/informations', {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+	response = await response.json()
+	const newImageElement = document.createElement('img')
+	newImageElement.src = response.about_me_img_url
+	aboutMePhotoElement.appendChild(newImageElement)
+	console.log(response.about_me_img_url);
+})()
+
+;(async () => {
+	const aboutMePhotoElement = document.querySelector('.first')
+	let response = await fetch('https://strapi-portfolio-hadicha.herokuapp.com/informations', {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+	response = await response.json()
+	const newImageElement = document.createElement('img')
+	newImageElement.src = response.Portfolio_first_img_url
+	aboutMePhotoElement.appendChild(newImageElement)
+})()
+
+;(async () => {
+	const aboutMePhotoElement = document.querySelector('.second')
+	let response = await fetch('https://strapi-portfolio-hadicha.herokuapp.com/informations', {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+	response = await response.json()
+	const newImageElement = document.createElement('img')
+	newImageElement.src = response.Portfolio_second_img_url
+	aboutMePhotoElement.appendChild(newImageElement)
+})()
+
+;(async () => {
+	const aboutMePhotoElement = document.querySelector('.third')
+	let response = await fetch('https://strapi-portfolio-hadicha.herokuapp.com/informations', {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+	response = await response.json()
+	const newImageElement = document.createElement('img')
+	newImageElement.src = response.Portfolio_third_img_url
+	aboutMePhotoElement.appendChild(newImageElement)
+})()
+
+;(async () => {
+	const aboutMePhotoElement = document.querySelector('.fourth')
+	let response = await fetch('https://strapi-portfolio-hadicha.herokuapp.com/informations', {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+	response = await response.json()
+	const newImageElement = document.createElement('img')
+	newImageElement.src = response.Portfolio_fourth_img_url
+	aboutMePhotoElement.appendChild(newImageElement)
+})()
+
+;(async () => {
+	const aboutMePhotoElement = document.querySelector('.fifth')
+	let response = await fetch('https://strapi-portfolio-hadicha.herokuapp.com/informations', {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+	response = await response.json()
+	const newImageElement = document.createElement('img')
+	newImageElement.src = response.Portfolio_fifth_img_url
+	aboutMePhotoElement.appendChild(newImageElement)
+})()
+
+;(async () => {
+	const aboutMePhotoElement = document.querySelector('.sixth')
+	let response = await fetch('https://strapi-portfolio-hadicha.herokuapp.com/informations', {
+		headers: {
+			"Content-Type": "application/json"
+		}
+	})
+	response = await response.json()
+	const newImageElement = document.createElement('img')
+	newImageElement.src = response.Portfolio_sixth_img_url
+	aboutMePhotoElement.appendChild(newImageElement)
 })()

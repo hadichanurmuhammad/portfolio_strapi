@@ -30,6 +30,7 @@ body {
 .typed-cursor{
 	display:none;
 }
+
 /*--------- Body End -------*/
 /*---------- Typography Css Start -------*/
 a {
@@ -259,21 +260,21 @@ input:focus, textarea:focus, select:focus, button:focus {
 	background-color: #000000;
 }
 .prt_home_wrapper{
-	background-image:url(http://placehold.it/1920X1080);
+	background-image:url(https://picsum.photos/id/1015/1920/1080);
 	background-position: center center;
 	background-repeat:no-repeat;
 	background-size:cover;
 	position:relative;
 	overflow-y:auto;
     padding: 200px 0px;
+    margin: 0 auto; 
 }
 .prt_home_wrapper h1{
 	position:absolute;
-	top:50%;
-	font-size:150px;
+	font-size:80px;
+    margin: 0 auto;
 	color: #ffffff;
 	font-weight:bold;
-	background: url(http://placehold.it/650X800) no-repeat;
 	-webkit-background-clip: text;
     background-size: cover;
 }
